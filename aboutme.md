@@ -4,6 +4,54 @@ title: About me
 subtitle: Android & IOS Developer
 ---
 
+## Project
+---
+**소로록**
+> 2018.07 ~ 2018.08  
+> 각자의 연락처를 한 번에 저장할 수 있는 Android & IOS 어플리케이션  
+> github: https://github.com/AnkyoungMoo/Sororok.git  
+
+
+
+## Skills
+---
+- Python  
+- JAVA(Android)  
+- Swift(IOS)  
+
+
+
+## 대외활동  
+---
+**IT 연합동아리 NEXTERS 12기**
+> 2017.12 ~  
+> 프로젝트 참여 및 서비스 런칭  
+> UNITHON(대학생 연합 해커톤) 운영  
+
+**코드클럽 대학생 SW 교육기부단**
+> 2017.09~2017.12  
+> 학생들을 대상으로 HTML&CSS 교육 봉사  
+
+**월드프렌즈 IT 봉사단**
+> 2017.06 ~ 2017.08  
+> 말레이시아 학생들을 대상으로 Scratch, App Inventor 교육 봉사  
+> 우수상 수상  
+
+**현대차 정몽구재단 온드림 스쿨 다빈치 교실**
+> 2016.08  
+> 초등학생들을 대상으로 Scratch 교육 봉사  
+
+
+## 교내 활동
+---
+**JAVA 프로그래밍 튜터**
+> 2017.03 ~ 2017.06  
+> JAVA 전공 강의 튜터 담당
+
+**늘푸른소리 1기**
+> 2017.03 ~ 2017.10  
+> 청음회관 학생들에게 IT 교육 봉사  
+> 메이커 페어 서울 2017 참가
 
 <!-- - I rock a great mustache -->
 <!-- - I'm extremely loyal to my family -->
