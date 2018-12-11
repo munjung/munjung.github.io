@@ -33,6 +33,13 @@ subtitle: Android & IOS Developer
 - JAVA(Android)  
 - Swift(IOS)  
 
+## 경력
+---
+**마이셀럽스 인턴**
+> 2018.08~2018.12  
+> 데이터 수집 및 정제  
+> github: [https://github.com/munjung/intern_work](https://github.com/munjung/intern_work)
+
 
 
 ## 대외활동  
