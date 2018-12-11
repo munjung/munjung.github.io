@@ -6,12 +6,26 @@ subtitle: Android & IOS Developer
 
 ## Project
 ---
+**S.S.S.(Smart Size Solution)**
+> 2018.01 ~ 2018.08  
+> 신체 사진을 바탕으로 사용자의 사이즈를 추출하여 적당한 옷을 추천해주는 하이브리드 어플리케이션  
+> github: [https://github.com/munjung/sss_android](https://github.com/munjung/sss_android)  
+> 관련논문: [2D 이미지에서 기계학습 기법을 활용한 특징점 찾기 및 신체치수 추출](http://ki-it.com/_PR/view/?aidx=13574&bidx=1027)
+
+
 **소로록**
-> 2018.07 ~ 2018.08  
+> 2018.06 ~ 2018.08  
 > 각자의 연락처를 한 번에 저장할 수 있는 Android & IOS 어플리케이션  
-> github: https://github.com/AnkyoungMoo/Sororok.git  
+> github: [https://github.com/AnkyoungMoo/Sororok.git](https://github.com/AnkyoungMoo/Sororok.git)    
 
+**트래플**
+> 2017.12 ~ 2018.02  
+> 위치기반 여행 기록 Android 어플리케이션  
+> github: [https://github.com/munjung/traveller](https://github.com/munjung/traveller)  
 
+**기업정보 for Women**  
+> 2017.09  
+> 전자공시시스팀(DART)의 Open API를 이용하여 가족친화인증기업 등의 정보를 제공하는 웹 페이지
 
 ## Skills
 ---
