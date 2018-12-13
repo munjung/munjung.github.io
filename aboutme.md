@@ -36,7 +36,7 @@ subtitle: Android & IOS Developer
 ## 경력
 ---
 **마이셀럽스 인턴**
-> 2018.08~2018.12  
+> 2018.08 ~ 2018.12  
 > 데이터 수집 및 정제  
 > github: [https://github.com/munjung/intern_work](https://github.com/munjung/intern_work)
 
@@ -50,7 +50,7 @@ subtitle: Android & IOS Developer
 > UNITHON(대학생 연합 해커톤) 운영  
 
 **코드클럽 대학생 SW 교육기부단**
-> 2017.09~2017.12  
+> 2017.09 ~ 2017.12  
 > 학생들을 대상으로 HTML&CSS 교육 봉사  
 
 **월드프렌즈 IT 봉사단**
