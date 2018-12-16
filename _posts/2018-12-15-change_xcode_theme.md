@@ -22,12 +22,15 @@ IOS의 개발 툴인 Xcode의 테마를 변경하는 방법에 대해 포스팅�
 
 
 ---
-1. 아래의 Github 주소에 있는 파일 다운로드후 압축 해제
+1. 아래 Github 주소에 있는 파일 다운로드후 압축 해제
 - [https://github.com/jesseXu/xcode-theme-Darcula](https://github.com/jesseXu/xcode-theme-Darcula)  
 2. Darcula.dvtcolortheme 파일 확인 (형식: [테마명].dvtcolortheme)
-3. `~/Library/Developer/Xcode/UserData/FontAndColorThemes/` 폴더 이동  
-* Spotlight 이용하면 간단함
-![use_spotlight](/img/181215/181215_img_3.png)
+3. 해당 폴더로 이동
+```
+~/Library/Developer/Xcode/UserData/FontAndColorThemes/
+```   
+* Spotlight 이용하면 간단
+![use_spotlight](/img/181215/181215_img_3.png){: width="600" height="250"}
 4. 폴더 안에 파일 삽입
 5. Xcode 재실행  
 
