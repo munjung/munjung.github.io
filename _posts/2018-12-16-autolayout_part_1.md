@@ -4,6 +4,7 @@ title: 오토레이아웃(AutoLayout) 정리-1
 subtitle: 코드를 이용하여 오토레이아웃 구현하기
 tags: [Xcode, swift]
 ---
+
 ## 오토레이아웃?
 디바이스 사이즈에 구애받지 않고 `시각적으로 동일한 화면`을 구현해야할 때 필요한 것으로 `view의 제약 사항`을 바탕으로 모든 view의 크기와 위치를 `동적`으로 계산한다.  
 ### 오토레이아웃을 구현하는 방법
@@ -47,9 +48,7 @@ label.topAnchor.constraint(equalTo: button.bottomAnchor, constant: 20)
 
 
 
-`NSLayoutConstraint`를 이용하여 오토레이아웃을 구현하는 자세한 방법은 다음 포스팅에서 다루도록 하겠다.
-
-
+`NSLayoutConstraint`를 이용하여 오토레이아웃을 구현하는 자세한 방법은 다음 포스팅에서 다루도록 하겠다.  
 
 ---
 해당 포스트는 [부스트캠프](https://www.edwith.org/boostcourse-ios)의 강의를 정리한 내용입니다.  
