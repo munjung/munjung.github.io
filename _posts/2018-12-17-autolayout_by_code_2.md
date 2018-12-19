@@ -12,15 +12,43 @@ tags: [Xcode, swift]
 - 코드를 이용하여 구현
 - 인터페이스 빌더에서 구현
 
-[이전 포스팅](/2018-12-16-autolayout_by_code_1/)에서 설명한대로 `NSLayoutConstraint`를 이용하여 오토레이아웃을 구현하는 방법을 알아보자.
+### 코드를 이용하여 오토레이아웃을 구현하는 방법
+- Layout Anchor
+- NSLayoutConstraint
+- Visual Format Language
+
+이번에는 `NSLayoutConstraint`를 이용하여 오토레이아웃을 구현하는 방법을 알아보자.
 - 오토레이아웃 방정식  
 view1.attr1 = view2.attr2 * multiplier + constant  
 item.attribute = toItem.attribute * multiplier + constant  
 ![autolayout_equation](/img/181217/181217_img_2.png)  
 
-- NSLayoutConstraint 인스턴스 생성 제약조건
+- NSLayoutConstraint 인스턴스 생성 제약조건  
 ![nslayout_condition](/img/181217/181217_img_1.png)  
+
+- ViewController을 통해 button과 label을 superview에 추가  
+![add_button_label_at_superview](/img/181217/181217_img_3.png)  
+
+- superview를 기준으로 button을 중앙 정렬 해준다.  
+![add_button_label_at_superview](/img/181217/181217_img_4.png)    
+
+- 실행을 하면 button이 중앙 정렬된 걸 확인할 수 있다.  
+![button_center_arrange](/img/181217/181217_img_5.png){: width="300" height="500"}    
+
+- label도 정렬해주자(button을 기준으로!)  
+![button_center_arrange](/img/181217/181217_img_6.png)
+
+````
+NSLayoutConstraint(item: mylabel,
+  attribute: NSLayoutConstraint.Attribute.trailing,
+  relatedBy: NSLayoutConstraint.Relation.equal,
+  toItem: mybutton,
+  attribute: NSLayoutConstraint.Attribute.leading,
+  multiplier: 1.0, constant: -20.0)
+````
+label의 끝나는 지점(trailing)이 button의 시작 지점(leading)에서 20만큼 왼쪽으로 떨어져있게 설정했다.    
+![button_center_arrange](/img/181217/181217_img_7.png){: width="300" height="500"}
 
 
 ---
-해당 포스트는 [부스트캠프](https://www.edwith.org/boostcourse-ios)의 강의를 정리한 내용입니다.  
+해당 포스트는 [부스트코스](https://www.edwith.org/boostcourse-ios)의 강의를 정리한 내용입니다.  

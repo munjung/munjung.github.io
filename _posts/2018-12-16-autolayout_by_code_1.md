@@ -11,7 +11,13 @@ tags: [Xcode, swift]
 - 코드를 이용하여 구현
 - 인터페이스 빌더에서 구현
 
-먼저 `코드`를 이용하여 오토레이아웃을 구현하는 방법에 대해 알아보자.
+먼저 `코드`를 이용하여 오토레이아웃을 구현하는 방법에 대해 알아보자.  
+### 코드를 이용하여 오토레이아웃을 구현하는 방법
+- Layout Anchor
+- NSLayoutConstraint
+- Visual Format Language
+
+이번 포스팅에서는 `Layout Anchor`을 이용하는 방법을 알아볼 것이다.
 오토레이아웃을 구현하기 위해서는 코딩으로 제약(Constraint)을 만들어야 하는데 이때 `앵커(Anchor)`를 사용하게 된다.
 
 - 메인 스토리보드에 button과 label을 추가하고 ViewController.swift와 연결해준다.
@@ -48,7 +54,7 @@ label.topAnchor.constraint(equalTo: button.bottomAnchor, constant: 20)
 
 
 
-`NSLayoutConstraint`를 이용하여 오토레이아웃을 구현하는 자세한 방법은 다음 포스팅에서 다루도록 하겠다.  
+`NSLayoutConstraint`를 이용하는 방법은 [다음 포스팅](/2018-12-17-autolayout_by_code_2/)에서 다루도록 하겠다.    
 
 ---
-해당 포스트는 [부스트캠프](https://www.edwith.org/boostcourse-ios)의 강의를 정리한 내용입니다.  
+해당 포스트는 [부스트코스](https://www.edwith.org/boostcourse-ios)의 강의를 정리한 내용입니다.  
