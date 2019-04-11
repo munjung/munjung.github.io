@@ -782,3 +782,13 @@ td.gutter {
   font-style: italic;
   font-size: 16px;
 }
+
+/* .markdown-body img.emoji{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    box-sizing: unset;
+    background: none;
+    vertical-align: middle;
+} */
