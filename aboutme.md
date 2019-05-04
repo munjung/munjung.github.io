@@ -6,6 +6,12 @@ subtitle: Android & IOS Developer
 
 ## Project
 ---
+
+**떡슐랭**
+> 2018.12 ~ 2019.02  
+> 전국의 떡볶이 집을 모아놓은 IOS 어플리케이션  
+> github: [https://github.com/munjung/DDBK-iOS](https://github.com/munjung/DDBK-iOS)    
+
 **S.S.S.(Smart Size Solution)**
 > 2018.01 ~ 2018.08  
 > 신체 사진을 바탕으로 사용자의 사이즈를 추출하여 적당한 옷을 추천해주는 하이브리드 어플리케이션  
