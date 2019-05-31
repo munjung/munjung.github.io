@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 스프링 Mybatis PersistenceException 오류 해결하기
-subtitle: nested exception is org.mybatis.spring.MyBatisSystemException
+subtitle: org.mybatis.spring.MyBatisSystemException
 tags: [Spring]
 ---
 
@@ -10,7 +10,7 @@ tags: [Spring]
 
 ## - 문제
 
-![eclipse_code1](/img/190512/190512_img_1.png)  
+![eclipse_code1](/img/190512/190512_img_1.PNG)  
 
 처음에 발생한 오류는 바로 이것이었다. 이 오류의 원인은 다음과 같다고 한다.
 1. `Mapper 인터페이스와 맵핑되는 xml파일에 오타`가 있는 경우  
@@ -63,16 +63,16 @@ tags: [Spring]
 일단 그렇게 수정을 하고 돌려보니 잘 돌아간다!
 
 
-![eclipse_code2](/img/190512/190512_img_3.png)
+![eclipse_code2](/img/190512/190512_img_3.PNG)
 
 저번 프로젝트와 마찬가지로 tomcat의 기본 path를 / 로 바꿔주고 실행했다!  
 여기까지는 잘되서 너무 신났다.
 
-![eclipse_code3](/img/190512/190512_img_4.png)
+![eclipse_code3](/img/190512/190512_img_4.PNG)
 
 메서드 호출 방식을 지정하고, board/list로 url을 요청했을 때 동작을 지정했기 때문에 localhost:8080/board/list를 호출했다. 그런데 Mybatis 오류가 발생한 것이다.
 
-![eclipse_code4](/img/190512/190512_img_5.png)
+![eclipse_code4](/img/190512/190512_img_5.PNG)
 
 구글에 검색해보니 `오류 메세지에 ###이 있는 것은 xml에 오타`가 있기 때문이라고 한다. 그래서 또 오타문제인가 싶어서 프로젝트를 세세하게 보면서 오타를 찾아봤다. 몇번을 인터페이스와 xml을 비교해보고 그 밖에도 기존의 Java 코드들도 확인해봤는데 그대로였다. 포기할까 싶었는데 오류메세지를 읽어보고 문득 JDBC라는 문구가 눈에 띄었다. 에러 메세지에는 데이터베이스 오류라고 쓰여있던 것이다. 그래서 검색해서 확인해보니 `데이터베이스 서버와 연결이 되지 않아 생기는 오류`라고했다. 그것을 알게된 순간 JDBC 연결과정에서 어떤 문제가 있다는 것을 깨닫게 되었다.
 
@@ -81,24 +81,24 @@ tags: [Spring]
 DB와 관련된 작업을 처리할 수 있도록 도와주는 일을 한다고 한다. Java에서 데이터베이스를 사용할 때에는 JDBC API를 이용하여 프로그래밍을 하는데 Java는 DBMS 종류에 상관없이 하나의 JDBC API를 사용하여 데이터베이스 작업을 처리할 수 있기 때문에 알아두면 어떤 DBMS든 작업을 처리할 수 있게 된다고 한다.
 
 
-![eclipse_code5](/img/190512/190512_img_8.png)
+![eclipse_code5](/img/190512/190512_img_8.PNG)
 oracle 데이터베이스의 jdbc drover는 11g까지 maven으로 지원이 되지 않는다고 한다. 결국 jar 파일을 직접 추가해줘야 하는 것이다. ojdbc8 경로는 sqldeveloper/jdbc/lib에 위치한다. ojdbc8는 Java Build Path에 경로를 추가해줘야 한다.
-![eclipse_code6](/img/190512/190512_img_9.png)  
+![eclipse_code6](/img/190512/190512_img_9.PNG)  
 
 그리고 또 추가해줘야하는 곳이 있었으니...바로
 
 ## - Deployment Assembly
 
-![eclipse_code7](/img/190512/190512_img_10.png)  
+![eclipse_code7](/img/190512/190512_img_10.PNG)  
 
 여기였다는 사실! 나는 build path에만 추가하면 문제가 없는 줄 알았는데 아니었다.
 
-![eclipse_code8](/img/190512/190512_img_12.png)
+![eclipse_code8](/img/190512/190512_img_12.PNG)
 > Add - Java Build Path Entries - jar 추가 - Finish
 
 을 하고 다시 실행을 해보니
 
-![eclipse_code9](/img/190512/190512_img_13.png)
+![eclipse_code9](/img/190512/190512_img_13.PNG)
 
 2주동안 받은 스트레스 한번에 해소되는 느낌이었다! 흑흑
 도대체 Deployment Assembly가 뭐길래 그런가 싶어서 검색을 안 할수가 없었다.
