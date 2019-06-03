@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 스프링 No mapping found for HTTP request 해결하기
-subtitle: context:component-scan 사용법, Update Project의 중요성
+subtitle: Update Project의 중요성
 tags: [Spring]
 ---
 

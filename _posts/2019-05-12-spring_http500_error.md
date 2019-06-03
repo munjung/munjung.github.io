@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 스프링 Mybatis PersistenceException 오류 해결하기
-subtitle: org.mybatis.spring.MyBatisSystemException
+title: 스프링 Mybatis PersistenceException 오류 해결
+subtitle: MyBatisSystemException
 tags: [Spring]
 ---
 
