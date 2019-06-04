@@ -294,7 +294,9 @@ class MyLocationActivity : AppCompatActivity(),MapView.CurrentLocationEventListe
 
 ~~~
 
-이렇게 해서 코드를 실행하게 되면 아래와 같이 현재 보고 있는 방향을 포함한 트래킹 모드가 실행된다.
+이렇게 해서 코드를 실행하게 되면 아래와 같이 현재 보고 있는 방향을 포함한 트래킹 모드가 실행된다.  
+(트래킹 모드의 핵심은 `mapView.currentLocationTrackingMode = MapView.CurrentLocationTrackingMode.TrackingModeOff` 부분이다!)
+
 ![result_screen2](/img/190604/190604_img_2.jpeg){: width="400" height="600"}
 
 사진에서와 같이 위치가 가끔씩 튄다는 문제가 있다. 이 부분은 추후에 보정을 해야겠지만 일단 대체적으로 정확하다.
