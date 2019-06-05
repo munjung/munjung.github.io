@@ -331,7 +331,7 @@ var short_address: String = p1!!.substring(0,11) //어떤 기준으로 자를 �
 마지막으로 해야할 것은 현재위치에서 50m 이내를 원으로 표시하는 것 이었다. 이 부분은 개발자 사이트에서도 워낙 잘 나와있어서 금방 할 수 있었다. 마찬가지로 onCurrentLocationUpdate에 코드를 추가해줬다.
 ![map_circle](/img/190604/190604_img_4.png)
 
-mapView.moveCamera도 해봤지만 너무 과하게 확대가 되길래 그 부분은 삭제했다. 사실 돌려보면 알겠지만 이 코드에도 문제가 있다. onCurrentLocationUpdate가 주기적으로 업데이트 되기 때문에 circle이 무한 증식하게 된다.ㅋㅋㅋ 이 부분은 나중에 따로 수정을 할 예정이다.
+mapView.moveCamera도 해봤지만 너무 과하게 확대가 되길래 그 부분은 삭제했다. 사실 돌려보면 알겠지만 이 코드에도 문제가 있다. onCurrentLocationUpdate가 주기적으로 업데이트 되기 때문에 **circle이 무한 증식** 된다.ㅋㅋㅋ 이 부분은 나중에 따로 `수정`을 할 예정이다.
 ~~~
 val circle = MapCircle(
             MapPoint.mapPointWithGeoCoord(mapPointGeo.latitude, mapPointGeo.longitude), // center
@@ -349,3 +349,18 @@ val circle = MapCircle(
 
 
 코틀린으로 코드를 변경하면서 코틀린에 대해서도 조금씩 알아가는게 재밌다. lateinit, companion object 등 알면 알수록 신기한 문법이 많은 것 같다. 나중에 따로 코틀린 문법에 대해서도 정리해봐야겠다.
+
+
+
+`+++ 추가`
+
+API Docs를 읽어보니 따로 원을 그려주지 않고도 반경을 표시하는 방법이 있다.
+
+![update_circle](/img/190604/190604_img_6.png)  
+
+기존의 원은 지우고 아래와 같이 변경했다.
+~~~
+mapView.setCurrentLocationRadius(50)
+mapView.setCurrentLocationRadiusFillColor(android.graphics.Color.argb(128,255,203,203))
+mapView.setCurrentLocationRadiusStrokeColor(android.graphics.Color.argb(128,255,203,203))
+~~~        
