@@ -7,6 +7,12 @@ subtitle: Android & IOS Developer
 ## Project
 ---
 
+**더듬이**  
+> 2019.05 ~ 2019.07  
+> 시각 장애인 전용 길찾기 서비스 Android 어플리케이션  
+> 서울시 통합이동서비스(MaaS) 본선 진출  
+> github : [https://github.com/AnkyoungMoo/Deodeumi](https://github.com/AnkyoungMoo/Deodeumi)  
+
 **떡슐랭**
 > 2018.12 ~ 2019.02  
 > 전국의 떡볶이 집을 모아놓은 IOS 어플리케이션  
@@ -41,11 +47,15 @@ subtitle: Android & IOS Developer
 
 ## 경력
 ---
+
+**N Tech Service 인턴**  
+> 2019.07 ~ 2019.08  
+> 네이버 지도 App DB 구축 및 품질개선
+
 **마이셀럽스 인턴**
 > 2018.08 ~ 2018.12  
 > 데이터 수집 및 정제  
 > github: [https://github.com/munjung/intern_work](https://github.com/munjung/intern_work)
-
 
 
 ## 대외활동  
