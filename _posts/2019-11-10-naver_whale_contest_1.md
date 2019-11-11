@@ -51,7 +51,7 @@ sudo service apache2 stop // 중단
 
 ## - Apache root 변경
 
-나는 Python을 이용해서 kakao vision api와 naver papago api, research api를 요청하고 결과를 출력해주기로 했다. 그래서 Apache가 Python을 실행할 수 있어야 했고, 그러기 위해선 Python 파일을 서버에 올려야 했다. Python 파일을 올린 디렉토리는 따로 만들어야 했기에, Apache의 root 경로를 Python 파일이 있는 디렉토리로 변경해줘야 했다. Apache 웹 서버의 루트 경로를 설정하는 곳은 `000-default.conf`인데 해당 파일은 아래의 주소에 위치한다. `vi` 명령어를 이용해서 000-default.conf 파일을 수정해주자! 
+나는 Python을 이용해서 kakao vision api와 naver papago api, research api를 요청하고 결과를 출력해주기로 했다. 그래서 Apache가 Python을 실행할 수 있어야 했고, 그러기 위해선 Python 파일을 서버에 올려야 했다. Python 파일을 올린 디렉토리는 따로 만들어야 했기에, Apache의 root 경로를 Python 파일이 있는 디렉토리로 변경해줘야 했다. Apache 웹 서버의 루트 경로를 설정하는 곳은 `000-default.conf`인데 해당 파일은 아래의 주소에 위치한다. `vi` 명령어를 이용해서 000-default.conf 파일을 수정해주자!
 ~~~
 $ /etc/apache2/sites-available
 ~~~
@@ -86,4 +86,4 @@ mkdir searchmong
 
 
 여기까지가 AWS 구축과 Apache 설치 및 디렉토리 변경 방법이다. 지금와서 과정을 보면 쉽고 간단해보이지만, 서버를 처음하는 입장에선 모든게 낯설고 어려웠다.😵😵😵 심지어 리눅스 명령어도 몰랐기 때문에 conf 파일을 수정할 때 꽤나 애먹었다.....😥 서버 개발자님들 진심으로 존경스럽다..💓  
-다음 포스팅에서는 scp를 이용해서 서버에 파일을 업로드 하는 것과, Python으로 CGI를 사용하기를 정리해보겠다.
+[다음 포스팅](/2019-11-10-naver_whale_contest_2/)에서는 scp를 이용해서 서버에 파일을 업로드 하는 것과, Python으로 CGI를 사용하기를 정리해보겠다.
