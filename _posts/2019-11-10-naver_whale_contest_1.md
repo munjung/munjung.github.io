@@ -31,7 +31,7 @@ $ ssh -i "searchmong.pem" ubuntu@ec2-15-164-97-135.ap-northeast-2.compute.amazon
 ## - Apache 설치
 
 사실 나는 Apache를 설치하기 전, nginx를 사용했었다. 그러나 여러가지 문제로(추후 포스팅에서 작성) Apache를 선택하게 되었다. nginx를 설치하는 방법은 [유튜브](https://youtu.be/28ioY4vgC9I)를 참고했다.
-Apache를 설치하기 위해서는 SSH에 접속해야 한다. 그 뒤, 아래은 명렁어를 입력한다.
+Apache를 설치하기 위해서는 SSH에 접속해야 한다. 그 뒤, 아래의 명렁어를 입력한다.
 ~~~
 sudo apt-get install apache2
 ~~~
