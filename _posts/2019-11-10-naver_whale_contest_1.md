@@ -51,7 +51,7 @@ sudo service apache2 stop // 중단
 
 ## - Apache root 변경
 
-나는 Python을 이용해서 kakao vision api와 naver papago api, research api를 요청하고 결과를 출력해주기로 했다. 그래서 Apache가 Python을 실행할 수 있어야 했고, 그러기 위해선 Python 파일을 서버에 올려야 했다. Python 파일을 올린 디렉토리는 따로 만들어야 했기에, Apache의 root 경로를 Python 파일이 있는 디렉토리로 변경해줘야 했다. Apache 웹 서버의 루트 경로를 설정하는 곳은 `000-default.conf`인데 해당 파일은 아래의 주소에 위치한다. `vi` 명령어를 이용해서 000-default.conf 파일을 수정해주자! (리눅스 명령어도 몰라서 한참 헤맸다 ^^..)
+나는 Python을 이용해서 kakao vision api와 naver papago api, research api를 요청하고 결과를 출력해주기로 했다. 그래서 Apache가 Python을 실행할 수 있어야 했고, 그러기 위해선 Python 파일을 서버에 올려야 했다. Python 파일을 올린 디렉토리는 따로 만들어야 했기에, Apache의 root 경로를 Python 파일이 있는 디렉토리로 변경해줘야 했다. Apache 웹 서버의 루트 경로를 설정하는 곳은 `000-default.conf`인데 해당 파일은 아래의 주소에 위치한다. `vi` 명령어를 이용해서 000-default.conf 파일을 수정해주자! 
 ~~~
 $ /etc/apache2/sites-available
 ~~~
