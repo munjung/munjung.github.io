@@ -46,7 +46,7 @@ print(output)
 서버에도 Pyhton을 설치해야 한다. 위의 코드는 테스트용으로 PyCharm으로 작성한 것이기 때문에, 서버에서 곧장 실행이 불가능하다.  import한 라이브러 또한 pip을 통해 리눅스에 설치를 해야한다. 나는 이 사실도 모르고 바로 서버에서 실행을 시켰다. PyCharm에서는 결과가 제대로 나오는데 왜 서버에서는 동작이 안되는지 이해가 안되서 3시간을 멘붕에 빠졌었다...😉 (결국, vi 무한 반복으로 리눅스에서 한줄씩 테스트해보는 사태가 발생했다.ㅎ)
 
 ## - 서버에 파일 업로드
-`scp`를 이용하면 된다. scp는 secure copy (remote file copy program)의 줄임말로 ssh를 이용해 네트워크로 연결된 호스트간에 파일을 주고 받는 명령어로, 서버에 파일을 업로드 할 수 있고 반대로 서버에 있는 파일을 다운로드할 수 있다. 나는 .pem 인증서를 이용해서 서버에 Python 파일을 전송했다. .pem과 Python 파일명을 입력할 때는, 해당 파일이 존재하는 경로도 같이 넣어줘야 한다.
+`scp`를 이용하면 된다. scp는 secure copy (remote file copy program)의 줄임말로 ssh를 이용해 네트워크로 연결된 호스트간에 파일을 주고 받는 명령어로, 서버에 파일을 업로드 할 수 있고 반대로 서버에 있는 파일을 다운로드할 수 있다. 나는 .pem 인증서를 이용해서 서버에 Python 파일을 전송했다. .pem과 Python 파일명을 입력할 때는, 해당 파일이 존재하는 경로도 같이 넣어줘야 한다. 자세한 정보는 [이 블로그](https://ict-nroo.tistory.com/40)를 참고하면 좋다.
 
 ~~~
 $ scp -i searchmong.pem ocr.py ubuntu@ec2-15-164-97-135.ap-northeast-2.compute.amazonaws.com: "directory name"
@@ -63,4 +63,4 @@ $ /etc/apache2/apache2.conf
 Directory 태그안에 아래와 같이 설정해준다. cgi-script를 실행하라는 헤더와 옵션을 추가하면 된다. 그 아래의 코드는 다음에 설명하겠다.
 ![add_directory](/img/191110/191110_img_7.png)
 
-이번 포스팅은 여기까지다. 다음 포스팅에서는 403 Forbidden error 해결과, CORS 정책 해결(+Postman)에 대해 정리하도록 하겠다. 
+이번 포스팅은 여기까지다. 다음 포스팅에서는 403 Forbidden error 해결과, CORS 정책 해결(+Postman)에 대해 정리하도록 하겠다.
