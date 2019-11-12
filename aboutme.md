@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Android & IOS Developer
+subtitle: Developer
 ---
 
 ## Project
@@ -46,9 +46,9 @@ subtitle: Android & IOS Developer
 
 ## Skills
 ---
-- Python  
 - JAVA(Android)  
 - Swift(IOS)  
+- Python  
 
 ## 경력
 ---
